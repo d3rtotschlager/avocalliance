@@ -1,0 +1,81 @@
+/*================================================
+    GLOBAL
+================================================*/
+
+body {
+    background-color: #ECEFF1;
+}
+
+/* Links */
+a {
+    color: #90A4AE;
+}
+
+/*================================================
+    MAIN CONTENT
+================================================*/
+
+.hdelimiter {
+    background-color: #607D8B;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #263238;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #c4c4c4;
+}
+.navbar-default .navbar-nav>li>a:focus {
+    color: #c4c4c4;
+}
+
+/* Title overlay */
+#banner {
+/*    color: #455A64;*/
+    color: #263238;
+/*    text-shadow: 3px 3px 3px #37474F;*/
+    background-color: rgba(176, 190, 197, 0.5);
+}
+
+/* BODY */
+article {
+    background-color: #ECEFF1;
+}
+article h2 {
+    color: #777;
+}
+
+.lawyer p {
+    text-shadow: 3px 3px 3px #B0BEC5;
+}
+#lawyers img {
+    background-color: #607D8B;
+}
+
+/* MORE ABOUT LAWYER
+----------------------------*/
+.more-text {
+    background-color: rgba(207, 216, 220, 0.5);
+}
+.more-text > ul:last-child {
+    background-color: rgba(207, 216, 220, 1);
+}
+.more-picture {
+    background-color: #607D8B;
+}
+
+/* FOOTER
+----------------------------*/
+footer {
+    background-color: #263238;
+}
+footer p {
+    color: #ffffff;
+}

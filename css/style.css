@@ -1,0 +1,185 @@
+/*================================================
+    GLOBAL
+================================================*/
+body {
+    text-align: center; /* content centered by default */
+    font-family: 'Open Sans', sans-serif; /* default font */
+    margin: 70px 0 0 0; /* because of bootstrap navbar hiding content */
+}
+/* To fix bootstrap's weird horizontal overflow */
+.row {
+    margin: 0;
+}
+strong {
+    font-weight: bold;
+}
+small{
+    font-size: 70%;
+}
+/* Animated links */
+a {
+    transition: all .5s;
+}
+p {
+    margin: 0;
+    font-size: 100%;
+}
+/* Making imgs responsive */
+img {
+    height: auto;
+    width: 100%;
+}
+/* Resetting margin/padding */
+ul, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: inside;
+}
+
+/*================================================
+    MAIN CONTENT
+================================================*/
+.parallax {
+    height: 50vh;
+}
+.hdelimiter {
+    display: block;
+    height: 2px;
+    margin: 2vh auto 3vh auto;
+    width: 150px;
+}
+
+/* Navbar*/
+.navbar {
+    border: 0;
+    border-radius: 0;
+    font-size: 120%;
+    margin: 0;
+    padding: 10px 0;
+    z-index: 1;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #c4c4c4;
+    font-weight: normal;
+}
+
+/* Title overlay */
+#banner {
+    font-size: 5vmax;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); /* half its height */
+}
+
+/* Offsetting nav anchors */
+#about-nav, #lawyers-nav, #location-nav {
+    content: " ";
+    display: block;
+    height: 70px;
+    margin-top: -70px;
+    visibility: hidden;
+}
+
+
+/* ABOUT
+----------------------------*/
+#intro {
+    font-size: 150%;
+    padding: 4vh 0;
+}
+
+
+/* LAWYERS
+----------------------------*/
+#lawyers {
+    font-size: 150%;
+    padding: 5vh 0 2vh 0;
+}
+#lawyers p:last-child {
+    margin: 1vh 0 2vh 0;
+}
+#lawyers img {
+            filter: grayscale(40%);
+    -webkit-filter: grayscale(40%);
+       -moz-filter: grayscale(40%);
+        -ms-filter: grayscale(40%);
+         -o-filter: grayscale(40%);
+    border-radius: 100px;
+    height: 150px;
+    padding: 3px;
+    transition: all .5s;
+    width: 150px;
+}
+#lawyers img:hover {
+            filter: grayscale(0%) drop-shadow(0px 0px 5px #5a7481);
+    -webkit-filter: grayscale(0%) drop-shadow(0px 0px 5px #5a7481);
+       -moz-filter: grayscale(0%) drop-shadow(0px 0px 5px #5a7481);
+        -ms-filter: grayscale(0%) drop-shadow(0px 0px 5px #5a7481);
+         -o-filter: grayscale(0%) drop-shadow(0px 0px 5px #5a7481);
+}
+
+
+/* LOCATION
+----------------------------*/
+#location {
+    font-size: 120%;
+}
+#location-text p {
+    margin: 2vh 0;
+}
+#gmap {
+    height: 30vh;
+}
+
+
+/* MORE ABOUT LAWYER
+----------------------------*/
+.more {
+    font-size: 120%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5vh 0;
+}
+.more-picture {
+            filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+    border-radius: 100%;
+    margin: 1vh 0 2vh 0;
+    max-width: 300px;
+    padding: 4px;
+}
+.more-text {
+    border-radius: 10px;
+    padding: 3%;
+    text-align: left;
+}
+.more p {
+    margin: 2vh 0;
+}
+/* Skills */
+.more-text ul {
+    font-size: 120%;
+}
+/* Main data */
+.more-text > ul:last-child {
+    border-radius: 10px;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 2vh 0 0 0;
+    padding: 3%;
+    text-align: center;
+}
+.more-text ul:last-child li {
+    list-style: none;
+}
+
+
+/* FOOTER
+----------------------------*/
+footer {
+    padding: 3vh 0;
+}

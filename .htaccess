@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+Options -Indexes
+
+AuthName "Page d'administration protégée"
+AuthType Basic
+AuthUserFile "/home/avocalliwz/www/update/.htpasswd"
+Require valid-user
