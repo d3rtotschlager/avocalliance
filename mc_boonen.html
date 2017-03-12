@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="description" content="AvocAlliance, un cabinet d'avocats passionnés, dévoués à vous servir dans les limites du possible juridique">
     <title>AvocAlliance - m. BOONEN</title>
     <meta name="google-site-verification" content="aA-vT7oNblFQkKOvg4kIk0aKFjsYapa2V5UuysNwySY" />
@@ -18,7 +19,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/colours.css" />
 </head>
 
 <body>
@@ -40,6 +40,7 @@
                 <div id="topNavbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html#about-nav">A propos d'AvocAlliance</a></li>
+                        <li><a href="subjects.html">Nos matières</a></li>
                         <li><a href="index.html#lawyers-nav">Nos avocats</a></li>
                         <li><a href="index.html#location-nav">Localisation</a></li>
                     </ul>
@@ -52,49 +53,62 @@
 
     <section>
 
-        <article class="more container-fluid">
+        <article id="more" class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
 
-                    <h2>Marie-Christine BOONEN</h2>
-
-                    <div class="hdelimiter"></div>
+                    <div class="title-underlined">
+                        <h2>Marie-Christine BOONEN</h2>
+                        <div class="hdelimiter"></div>
+                    </div>
 
                     <div class="row">
-                        <div class="col-xs-12">
-                            <img class="more-picture" src="images/hd/mc_boonen.jpg" alt="photo avocat">
+                        <div class="col-xs-8 col-xs-offset-2">
+                            <img id="more-picture" src="images/hd/mc_boonen.jpg" alt="portrait de Me MC. BOONEN">
                         </div>
 
                         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-xlg-10 col-xlg-offset-1">
-                            <div class="more-text">
+                            <div id="more-text">
                                 <p>
-                                    <strong>Marie-Christine Boonen</strong> a obtenu sa licence en droit à xxxxxx en xxxxxx.
+                                    <strong>Marie-Christine BOONEN</strong> est avocate, associée fondatrice du cabinet AvocAlliance.
                                 </p>
                                 <p>
-                                    Avocate au Barreau du Brabant Wallon depuis xxxxxx.
+                                    Elle est licenciée en droit de l'Université Catholique de Louvain (1983).
                                 </p>
                                 <p>
-                                    Distinctions, qualtifications supplémentaires, ...
+                                    Elle est inscrite au Barreau du Brabant wallon depuis 1984.
                                 </p>
                                 <p>
-                                    Activités préférentielles :
+                                    Praticienne du droit civil en général, elle a également développé une expertise en matière de règlement collectif de dettes, étant régulièrement désignée comme médiatrice de dettes par le Tribunal du Travail du Brabant wallon.
                                 </p>
-                                <ul>
-                                    <li>a</li>
-                                    <li>b</li>
-                                    <li>c</li>
-                                </ul>
-                                <ul>
+                                <p>
+                                    Cette expertise l’a amenée à rédiger en partenariat avec deux autres médiateurs de dettes-avocats, un ouvrage en cette matière.
+                                </p>
+                                <p>
+                                    Marie est aussi administrateur à la personne et aux biens des incapables majeurs et est désignée en cette qualité par la Justice de Paix de Braine-l'Alleud.
+                                </p>
+                                <p>
+                                    Pendant deux années consécutives, Marie a été secrétaire de la Conférence du Jeune Barreau du Brabant wallon et a régulièrement participé à la Revue organisée par cette Conférence.
+                                </p>
+                                <div id="skills">
+                                    <h3>Compétences</h3>
+                                    <ul>
+                                        <li>Droit de la famille <a href="subjects.html">(?)</a></li>
+                                        <li>Règlement collectif de dettes <a href="subjects.html">(?)</a></li>
+                                        <li>Administrateur aux biens et à la personne</li>
+                                    </ul>
+                                </div>
+                                <ul id="contact">
                                     <li><a href="mailto:mc.boonen@avocat.be"> mc.boonen@avocat.be</a></li>
-                                    <li>+32 (0)2 385 07 67</li>
-                                    <li>BE 0816 370 113</li>
+                                    <li>Tel: +32 (0)2 385.07.67</li>
+                                    <li>Fax: +32 (0)2 354.62.82</li>
+                                    <li>BCE: 0816.370.113</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </article>
 
     </section>
@@ -119,10 +133,8 @@
     <!-- Google maps API -->
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-    <!-- jquery plugins -->
-    <script src="js/libs/jquery.responsiveslides-1.54.min.js"></script>
+    <!-- JQuery plugins -->
     <script src="js/libs/jquery.parallax-1.4.2.min.js"></script>
-    <script src="js/libs/jquery.stellar-0.6.2.min.js"></script>
     <script src="js/libs/jquery.onepagenav-3.0.0.min.js"></script>
     <script src="js/libs/jquery.maplace-0.2.7.min.js"></script>
 

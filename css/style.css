@@ -3,17 +3,22 @@
 ================================================*/
 
 body {
-    text-align: center;
     /* content centered by default */
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
-    /* default font */
-    margin: 70px 0 0 0;
+    /* makes it a default value for later on scalability with rem units */
+    font-size: 100%;
     /* because of bootstrap navbar hiding content */
+    margin: 70px 0 0 0;
     background-color: #ECEFF1;
 }
 
+
+/* Animated links */
+
 a {
     color: #90A4AE;
+    transition: all .5s;
 }
 
 
@@ -28,19 +33,7 @@ strong {
 }
 
 small {
-    font-size: 70%;
-}
-
-
-/* Animated links */
-
-a {
-    transition: all .5s;
-}
-
-p {
-    margin: 0;
-    font-size: 100%;
+    font-size: 1.4rem;
 }
 
 
@@ -66,7 +59,7 @@ h6 {
 }
 
 li {
-    list-style: inside;
+    list-style: none inside;
 }
 
 
@@ -78,26 +71,33 @@ li {
     height: 50vh;
 }
 
+.title-underlined {
+    padding: 10px;
+}
+
 .hdelimiter {
     display: block;
     height: 2px;
-    margin: 20px auto;
+    margin: 15px auto;
     width: 150px;
     background-color: #607D8B;
 }
 
+article {
+    padding: 50px 30px;
+    font-size: 1.7rem;
+    background-color: #ECEFF1;
+}
 
-/* Navbar*/
+
+/* Navbar */
 
 #navbar {
     border: 0;
     border-radius: 0;
-    font-size: 120%;
-    margin: 0;
+    font-size: 1.4rem;
     padding: 10px 0;
-    z-index: 1;
     color: #c4c4c4;
-    font-weight: normal;
     background-color: #263238;
 }
 
@@ -105,15 +105,15 @@ li {
     color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     color: #fff;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > li > a:hover {
     color: #c4c4c4;
 }
 
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav > li > a:focus {
     color: #c4c4c4;
 }
 
@@ -121,14 +121,12 @@ li {
 /* Title overlay */
 
 #banner {
-    font-size: 5vmax;
+    overflow: hidden;
+    font-size: 6rem;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    /* half its height */
-    /*    color: #455A64;*/
     color: #263238;
-    /*    text-shadow: 3px 3px 3px #37474F;*/
     background-color: rgba(176, 190, 197, 0.5);
 }
 
@@ -138,7 +136,11 @@ li {
 #header-nav,
 #about-nav,
 #lawyers-nav,
-#location-nav {
+#location-nav,
+#famille-nav,
+#jeunesse-nav,
+#dettes-nav,
+#circulation-nav {
     content: " ";
     display: block;
     height: 70px;
@@ -150,47 +152,41 @@ li {
 /* ABOUT
 ----------------------------*/
 
-#intro {
-    font-size: 150%;
-    padding: 4vh 0;
+#intro p {
+    text-align: left;
+    font-size: 1.6rem;
+    margin: 20px 0;
 }
 
 
 /* LAWYERS
 ----------------------------*/
 
-article {
-    background-color: #ECEFF1;
-}
-
 article h2 {
-    color: #777;
+    color: #263238;
 }
 
 #lawyers {
     font-size: 150%;
-    padding: 5vh 0 2vh 0;
 }
 
 #lawyers p {
+    font-size: 2rem;
     text-shadow: 3px 3px 3px #B0BEC5;
 }
 
-#lawyers p:last-child {
-    margin: 1vh 0 2vh 0;
-}
-
 #lawyers img {
+    margin: 30px 0 5px 0;
     filter: grayscale(40%);
     -webkit-filter: grayscale(40%);
     -moz-filter: grayscale(40%);
     -ms-filter: grayscale(40%);
     -o-filter: grayscale(40%);
     border-radius: 100px;
-    border: 4px #607D8B solid;
+    border: 3px #607D8B solid;
     height: 150px;
-    transition: all .5s;
     width: 150px;
+    transition: all .5s;
 }
 
 #lawyers img:hover {
@@ -205,29 +201,39 @@ article h2 {
 /* LOCATION
 ----------------------------*/
 
-#location {
-    font-size: 120%;
-}
-
 #location-text p {
-    margin: 2vh 0;
+    margin: 15px 0;
 }
 
 #gmap {
-    height: 30vh;
+    height: 300px;
+}
+
+
+/* SUBJECTS
+----------------------------*/
+
+.subject h3 {
+    padding: 10px 0;
+    color: #263238;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.subject p {
+    text-align: justify;
 }
 
 
 /* MORE ABOUT LAWYER
 ----------------------------*/
 
-.more {
-    font-size: 120%;
+#more {
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
-    padding: 5vh 0;
 }
 
-.more-picture {
+#more-picture {
     /*
     filter: grayscale(50%);
     -webkit-filter: grayscale(50%);
@@ -236,48 +242,58 @@ article h2 {
     -o-filter: grayscale(50%);
     */
     border-radius: 100%;
-    margin: 10px 0 20px 0;
+    margin: 30px 0;
     max-width: 300px;
-    border: 5px #607D8B solid;
+    border: 3px #607D8B solid;
 }
 
-.more-text {
+#more-text {
     border-radius: 10px;
-    padding: 3%;
+    padding: 10px 30px;
     text-align: left;
     background-color: rgba(207, 216, 220, 0.5);
 }
 
-.more p {
+#more-text p {
     margin: 20px 0;
 }
 
 
 /* Skills */
 
-.more-text ul {
-    font-size: 120%;
+#skills {
+    margin: 30px 0;
+}
+
+#skills h3 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#skills ul {
+    font-size: 1.8rem;
+}
+
+#skills ul li {
+    padding: 3px 10px;
+    list-style: none;
 }
 
 
 /* Main data */
 
-.more-text ul:last-child {
+#contact {
+    padding: 10px;
     border-radius: 10px;
-    font-size: 120%;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-top: 30px;
-    padding: 20px;
     text-align: center;
+    background-color: rgba(207, 216, 220, 1);
 }
 
-.more-text ul:last-child li {
+#contact li {
     list-style: none;
-    background-color: rgba(207, 216, 220, 1);
-}
-
-.more-text > ul:last-child {
-    background-color: rgba(207, 216, 220, 1);
 }
 
 
@@ -285,7 +301,14 @@ article h2 {
 ----------------------------*/
 
 footer {
-    padding: 3vh 0;
+    /* fixed footer
+    ----------------
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    */
+    font-size: 1.3rem;
+    padding: 30px 0;
     background-color: #263238;
     color: #ffffff;
 }

@@ -19,25 +19,26 @@ $(document).on("ready", function () {
         https://github.com/davist11/jQuery-One-Page-Nav
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-    $('#header').onePageNav({
-
+    $('#nav').onePageNav({
         currentClass: 'current',
         changeHash: false,
         scrollSpeed: 750,
         scrollThreshold: 0.5,
         filter: '',
         easing: 'swing',
-        // When animation start
-        begin: function () {},
-
-        // When animation ends
-        end: function () {}
+        begin: function () {
+            //I get fired when the animation is starting
+        },
+        end: function () {
+            //I get fired when the animation is ending
+        },
+        scrollChange: function ($currentListItem) {
+            //I get fired when you enter a section and I pass the list item of the section
+        }
     });
 
     /*
         Maplace - Jquery interface for GoogleMap API
-        https://pixelcog.github.io/parallax.js/
-
         Theme based on : https://snazzymaps.com/style/1/pale-dawn
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
