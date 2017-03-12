@@ -87,6 +87,10 @@ article {
     padding: 50px 30px;
     font-size: 1.7rem;
     background-color: #ECEFF1;
+    margin: 20px 0;
+}
+article p {
+    margin: 20px 0;
 }
 
 
@@ -140,6 +144,7 @@ article {
 #famille-nav,
 #jeunesse-nav,
 #dettes-nav,
+#administration-nav,
 #circulation-nav {
     content: " ";
     display: block;
@@ -154,8 +159,6 @@ article {
 
 #intro p {
     text-align: left;
-    font-size: 1.6rem;
-    margin: 20px 0;
 }
 
 
@@ -173,6 +176,7 @@ article h2 {
 #lawyers p {
     font-size: 2rem;
     text-shadow: 3px 3px 3px #B0BEC5;
+    margin: 0 0 20px 0;
 }
 
 #lawyers img {
@@ -200,10 +204,6 @@ article h2 {
 
 /* LOCATION
 ----------------------------*/
-
-#location-text p {
-    margin: 15px 0;
-}
 
 #gmap {
     height: 300px;
