@@ -1,17 +1,16 @@
 
 # adds "www"
-
-# RewriteEngine On
-# RewriteCond %{HTTP_HOST} !^www\.
-# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
 
 # forbids file listing of directories
-IndexIgnore *
-Options -Indexes
+#IndexIgnore *
+#Options -Indexes
 
 # asks for authentication
 
-# AuthName "Page d'administration protégée"
+# AuthName "Page d'administration"
 # AuthType Basic
 # AuthUserFile "/home/avocalliwz/www/update/.htpasswd"
 # Require valid-user

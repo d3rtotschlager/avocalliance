@@ -58,6 +58,8 @@ h6 {
     padding: 0;
 }
 
+/* Resetting list style */
+
 li {
     list-style: none inside;
 }
@@ -84,11 +86,11 @@ li {
 }
 
 article {
-    padding: 50px 30px;
+    margin: 50px 30px;
     font-size: 1.7rem;
     background-color: #ECEFF1;
-    margin: 20px 0;
 }
+
 article p {
     margin: 20px 0;
 }
@@ -137,15 +139,7 @@ article p {
 
 /* Offsetting nav anchors */
 
-#header-nav,
-#about-nav,
-#lawyers-nav,
-#location-nav,
-#famille-nav,
-#jeunesse-nav,
-#dettes-nav,
-#administration-nav,
-#circulation-nav {
+.anchor {
     content: " ";
     display: block;
     height: 70px;
@@ -224,6 +218,13 @@ article h2 {
     text-align: justify;
 }
 
+.subject ul {
+    margin-top: 10px;
+}
+
+.subject ul a {
+    color: #263238;
+}
 
 /* MORE ABOUT LAWYER
 ----------------------------*/
@@ -300,7 +301,7 @@ article h2 {
 /* FOOTER
 ----------------------------*/
 
-footer{
+footer {
     /* fixed footer
     ----------------
     width: 100%;
