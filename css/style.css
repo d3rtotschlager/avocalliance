@@ -9,7 +9,7 @@ body {
     /* makes it a default value for later on scalability with rem units */
     font-size: 100%;
     /* because of bootstrap navbar hiding content */
-    margin: 70px 0 0 0;
+    margin-top: 70px;
     background-color: #ECEFF1;
 }
 
@@ -19,6 +19,7 @@ body {
 a {
     color: #90A4AE;
     transition: all .5s;
+    cursor: pointer;
 }
 
 
@@ -28,19 +29,11 @@ a {
     margin: 0;
 }
 
-strong {
-    font-weight: bold;
-}
-
-small {
-    font-size: 1.4rem;
-}
-
 
 /* Making imgs responsive */
 
 img {
-    height: auto;
+    /* height: auto; */
     width: 100%;
 }
 
@@ -57,6 +50,7 @@ h6 {
     margin: 0;
     padding: 0;
 }
+
 
 /* Resetting list style */
 
@@ -86,13 +80,16 @@ li {
 }
 
 article {
-    margin: 50px 30px;
+    padding: 50px 0;
     font-size: 1.7rem;
-    background-color: #ECEFF1;
+}
+
+article h2 {
+    color: #263238;
 }
 
 article p {
-    margin: 20px 0;
+    margin-top: 40px 0;
 }
 
 
@@ -111,29 +108,16 @@ article p {
     color: #fff;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav>li>a {
     color: #fff;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav>li>a:hover {
     color: #c4c4c4;
 }
 
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav>li>a:focus {
     color: #c4c4c4;
-}
-
-
-/* Title overlay */
-
-#banner {
-    overflow: hidden;
-    font-size: 6rem;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #263238;
-    background-color: rgba(176, 190, 197, 0.5);
 }
 
 
@@ -148,29 +132,31 @@ article p {
 }
 
 
-/* ABOUT
+/* INDEX
 ----------------------------*/
+
+#banner {
+    overflow: hidden;
+    font-size: 6rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #263238;
+    background-color: rgba(176, 190, 197, 0.5);
+}
+
+
+/* INTRO */
 
 #intro p {
     text-align: left;
 }
 
 
-/* LAWYERS
-----------------------------*/
-
-article h2 {
-    color: #263238;
-}
+/* LAWYERS */
 
 #lawyers {
     font-size: 150%;
-}
-
-#lawyers p {
-    font-size: 2rem;
-    text-shadow: 3px 3px 3px #B0BEC5;
-    margin: 0 0 20px 0;
 }
 
 #lawyers img {
@@ -187,6 +173,13 @@ article h2 {
     transition: all .5s;
 }
 
+#lawyers span {
+    display: block;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px #B0BEC5;
+    margin-top: 20px 0;
+}
+
 #lawyers img:hover {
     filter: grayscale(0%) drop-shadow(0px 0px 5px #5a7481);
     -webkit-filter: grayscale(0%) drop-shadow(0px 0px 5px #5a7481);
@@ -196,105 +189,103 @@ article h2 {
 }
 
 
-/* LOCATION
-----------------------------*/
+/* LOCATION */
 
 #gmap {
     height: 300px;
 }
 
 
-/* SUBJECTS
-----------------------------*/
+/* SUBJECTS */
 
-.subject h3 {
-    padding: 10px 0;
-    color: #263238;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.subject p {
-    text-align: justify;
+.subject {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(207, 216, 220, 0.5);
+    border-radius: 5px;
 }
 
 .subject ul {
-    margin-top: 10px;
+    margin: 20px 0;
+}
+
+.subject a:hover {
+    text-decoration: none;
+}
+
+.subject-text {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(207, 216, 220, 1);
+}
+
+.subject-text p {
+    margin: 10px 0;
+    text-align: justify;
 }
 
 .subject ul a {
     color: #263238;
 }
 
+
+/* FEES
+----------------------------*/
+
+#fees p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
 /* MORE ABOUT LAWYER
 ----------------------------*/
 
 #more {
-    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 
 #more-picture {
-    /*
-    filter: grayscale(50%);
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    */
     border-radius: 100%;
     margin: 30px 0;
     max-width: 300px;
     border: 3px #607D8B solid;
 }
 
-#more-text {
-    border-radius: 10px;
-    padding: 10px 30px;
-    text-align: left;
+
+/* Text below the picture */
+
+#more-details {
+    border-radius: 5px;
+    padding: 20px;
     background-color: rgba(207, 216, 220, 0.5);
 }
 
-#more-text p {
-    margin: 20px 0;
+#more-details p {
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 
 /* Skills */
 
-#skills {
+#more-skills {
     margin: 30px 0;
+    font-size: 1.9rem;
 }
 
-#skills h3 {
+#more-skills h3 {
+    text-decoration: underline;
     padding: 20px 0;
-    text-align: center;
     font-size: 2.5rem;
 }
 
-#skills ul {
-    font-size: 1.8rem;
-}
-
-#skills ul li {
-    padding: 3px 10px;
-    list-style: none;
-}
-
-
-/* Main data */
-
-#contact {
+#more-contact {
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 1.8rem;
     font-weight: bold;
-    text-align: center;
     background-color: rgba(207, 216, 220, 1);
-}
-
-#contact li {
-    list-style: none;
 }
 
 
@@ -302,12 +293,6 @@ article h2 {
 ----------------------------*/
 
 footer {
-    /* fixed footer
-    ----------------
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    */
     font-size: 1.3rem;
     padding: 30px 0;
     background-color: #263238;
